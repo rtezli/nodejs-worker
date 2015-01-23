@@ -1,0 +1,37 @@
+{
+  "name": "NodejsWorker",
+  "version": "0.1.0",
+  "description": "JavaScript task execution engine for Windows Azure",
+  "main": "gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "azure-storage": "~0.3.2",
+    "chai": "~1.9.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-mocha": "~0.4.11",
+    "grunt-mocha-test": "~0.11.0",
+    "jshint": "~2.5.2",
+    "rx": "~2.3.1",
+    "synchronize": "~0.9.8",
+    "underscore": "~1.6.0",
+    "moment": "~2.8.1",
+    "promise": "~5.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Node.js",
+    "Windows",
+    "Azure",
+    "Task"
+  ],
+  "author": "Robert Tezli",
+  "license": "BSD-2-Clause"
+}
