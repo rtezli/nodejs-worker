@@ -5,8 +5,8 @@
             "queue" : "testqueue",
             "sourceContainer" : "sourcecontainer",
             "dataContainer" : "datacontainer",
-            "accountName" : "pixills",
-            "accountKey" : "EQMHRIBuT4xTsnUCEFMRS5RnXsBk3w66YqvZoDH774Ht0fXBruTkdZ0Vpv7jUDdyngV6xyPzeyVhR91O5auTxA==" 
+            "accountName" : "",
+            "accountKey" : "" 
         } 
     ]
 }
