@@ -46,7 +46,7 @@ var executeChain = function(command){
 		function(chain){
 			var input;
 			for(var source in chain){
-				var exec = new Function("azure", "input" source);
+				var exec = new Function("azure", "input", source);
 				try{
 					innput = exec(azure, input);
 					console.log('INFO', 'Executed commmand successfully : ' + command);

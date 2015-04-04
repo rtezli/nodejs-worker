@@ -1,5 +1,5 @@
 var azure = require('azure-storage');
-var Promise = require('promise');
+var prom = require('promise');
 
 function Queue(queueName, config){
 
@@ -32,7 +32,7 @@ function Queue(queueName, config){
             _queue.getMessages(_queueName, function(error, messages){
                 if(!error){
 
-                    if(messages == undefined || messages.length < 1)
+                    if(messages === undefined || messages.length < 1)
                         return fullfill();
 
                     var message = messages[0];

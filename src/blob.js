@@ -1,5 +1,5 @@
 var azure = require('azure-storage');
-var Promise = require('promise');
+var prom = require('promise');
 
 function Blob(containerName, config){
 

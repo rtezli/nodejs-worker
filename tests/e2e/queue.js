@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 var azure = require('../../src/azure.js');
-var guid = require('guid');
+//var guid = require('guid');
 
 var log = function(message){
     console.log(message);

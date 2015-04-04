@@ -1,7 +1,7 @@
 var azure = require('azure-storage');
-var guid = require('guid');
+//var guid = require('guid');
 var moment = require('moment');
-var Promise = require('promise');
+var prom = require('promise');
 
 function Table(tableName, config){
 
