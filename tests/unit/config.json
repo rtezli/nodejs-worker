@@ -1,0 +1,12 @@
+{
+  "accounts" : 
+  [
+    {
+      "queue" : "jobqueue",
+      "sourceContainer" : "sourcecontainer",
+      "dataContainer" : "datacontainer",
+      "accountName" : "",
+      "accountKey" : "" 
+    } 
+  ]
+}
