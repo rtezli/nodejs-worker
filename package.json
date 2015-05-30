@@ -1,37 +1,36 @@
 {
   "name": "NodejsWorker",
+  "author": "Robert Tezli",
+  "license": "BSD-2-Clause",
   "version": "0.1.0",
-  "description": "JavaScript task execution engine for Windows Azure",
-  "main": "gruntfile.js",
-  "directories": {
-    "test": "tests"
+  "url": "https://pixills.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtezli/nodejs-worker"
   },
-  "dependencies": {
-    "azure-storage": "~0.3.2",
-    "chai": "~1.9.1",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-mocha": "~0.4.11",
-    "grunt-mocha-test": "~0.11.0",
-    "jshint": "~2.5.2",
-    "rx": "~2.3.1",
-    "synchronize": "~0.9.8",
-    "underscore": "~1.6.0",
-    "moment": "~2.8.1",
-    "promise": "~5.0.0"
-  },
-  "devDependencies": {
-    "mocha": "~1.21.3"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
+  "description": "JavaScript-Node.js task execution engine for Windows Azure",
+  "main": "src/app.js",
   "keywords": [
     "Node.js",
-    "Windows",
-    "Azure",
-    "Task"
+    "Windows Azure",
+    "Tasks"
   ],
-  "author": "Robert Tezli",
-  "license": "BSD-2-Clause"
+  "devDependencies": {
+    "azure-storage": "^0.3.3",
+    "chai": "^2.3.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jasmine": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-filerev": "^2.3.1",
+    "grunt-mocha-test": "^0.12.7",
+    "guid": "0.0.12",
+    "jshint": "^2.5.11",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0",
+    "mocha": "^2.2.5",
+    "moment": "^2.10.3",
+    "promise": "^5.0.0",
+    "rx": "^2.3.25"
+  }
 }

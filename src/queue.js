@@ -20,7 +20,6 @@ function Queue(queueName, config){
                     return fullfill(response);
                 }           
                 else{
-                    //console.log(error);
                     return reject(error);
                 }
             });
@@ -41,7 +40,6 @@ function Queue(queueName, config){
                             return fullfill(message.messagetext);
                         }           
                         else{
-                            //console.log(error);
                             return reject(error);
                         }
                     });

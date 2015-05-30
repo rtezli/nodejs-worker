@@ -2,9 +2,9 @@
     "accounts" : 
     [
         {
-            "queue" : "testqueue",
-            "sourceContainer" : "sourcecontainer",
-            "dataContainer" : "datacontainer",
+            "queueName" : "testqueue",
+            "sourceContainerName" : "sourcecontainer",
+            "dataContainerName" : "datacontainer",
             "accountName" : "",
             "accountKey" : "" 
         } 

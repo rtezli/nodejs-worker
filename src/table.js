@@ -1,5 +1,4 @@
 var azure = require('azure-storage');
-//var guid = require('guid');
 var moment = require('moment');
 var prom = require('promise');
 
@@ -26,7 +25,6 @@ function Table(tableName, config){
                     return fullfill(result);
                 }           
                 else{
-                    //console.log(error);
                     return reject(error);
                 }
             });
@@ -42,7 +40,6 @@ function Table(tableName, config){
                     return fullfill(result);
                 }           
                 else{
-                    //console.log(error);
                     return reject(error);
                 }
             });      
@@ -70,11 +67,10 @@ function Table(tableName, config){
 
             _table.insertEntity(_tableName, task, function(error, result, response){
                 if(!error){
-                    //console.log('OK');
+
                     return fullfill(response);
                 }           
                 else{
-                    //console.log(error);
                     return reject(error);
                 }
             });
@@ -85,7 +81,6 @@ function Table(tableName, config){
         return new Promise(function(fullfill, reject){
             _table.retrieveEntity(_tableName, partitionKey, rowKey, function(error, result){
                 if(!error){
-                    //console.log('OK');
                     delete result.PartitionKey;
                     delete result.RowKey;
                     delete result.Timestamp;
@@ -98,7 +93,6 @@ function Table(tableName, config){
                     return fullfill(result);
                 }           
                 else{
-                    //console.log(error);
                     return reject(error);
                 }
             });      
@@ -114,11 +108,9 @@ function Table(tableName, config){
 
             _table.deleteEntity(_tableName, task, function(error, result){
                 if(!error){
-                    //console.log('OK : ' + JSON.stringify(result));
                     return fullfill(result);
                 }           
                 else{
-                    //console.log(error);
                     return reject(error);
                 }
             });
